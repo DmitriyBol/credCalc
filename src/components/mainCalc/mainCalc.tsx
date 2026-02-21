@@ -105,18 +105,16 @@ const MainCalc = () => {
             currentPeriod.interestAccruedInPeriod += (currentDebt * (currentRate / 100)) / daysInYear;
             currentPeriod.penaltyAccruedInPeriod += dailyPenalty;
 
-            // Проверяем дату начисления % (конец месяца или конец займа)
             const nextDay = new Date(d);
             nextDay.setDate(nextDay.getDate() + 1);
             const isInterestAccrualDate = d.getMonth() !== nextDay.getMonth() || d.getTime() === end.getTime();
 
-            // Начисляем просрочку, если в день начисления не было выплат
             if (isInterestAccrualDate && dailyRepPrincipal === 0 && dailyRepInterest === 0) {
                 const annuityVal = getAnnuityValueForDate(d);
                 if (annuityVal) {
-                    overdueAmount += annuityVal; // Для аннуитета просрочен весь платеж
+                    overdueAmount += annuityVal;
                 } else {
-                    overdueAmount += currentPeriod.interestAccruedInPeriod; // Для обычного — просрочены проценты
+                    overdueAmount += currentPeriod.interestAccruedInPeriod;
                 }
             }
 
