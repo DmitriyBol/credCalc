@@ -1,0 +1,26 @@
+.conditionBlock { margin-top: 24px; padding: 16px; background-color: #fef2f2; border: 1px solid #f87171; border-radius: 8px; }
+.conditionBlockTitle { margin: 0 0 16px 0; font-size: 16px; font-weight: 600; color: #991b1b; }
+.conditionForm { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 16px; }
+.formGroup { display: flex; flex-direction: column; flex: 1; min-width: 140px; }
+.label { font-size: 13px; color: #7f1d1d; margin-bottom: 4px; }
+.input { padding: 8px; border: 1px solid #fca5a5; border-radius: 4px; background-color: white; }
+.addBtn { padding: 8px 16px; background-color: #dc2626; color: white; border: none; border-radius: 4px; cursor: pointer; height: 35px; }
+.addBtn:hover { background-color: #b91c1c; }
+.list { display: flex; flex-direction: column; gap: 8px; }
+.listItem { display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: white; border: 1px solid #fca5a5; border-radius: 4px; font-size: 14px; }
+.deleteBtn { background: none; border: none; color: #dc2626; font-size: 16px; cursor: pointer; padding: 4px; }
+.deleteBtn:hover { color: #991b1b; }
+
+.radioGroup {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}

@@ -1,0 +1,88 @@
+.panel {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.formGroup {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.input {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.buttonSave {
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.buttonSave:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.buttonSave:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
+.buttonLoadLabel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.buttonLoadLabel:hover {
+    background-color: #059669;
+}
+
+.fileInput {
+    display: none;
+}

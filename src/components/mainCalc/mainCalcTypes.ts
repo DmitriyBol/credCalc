@@ -36,6 +36,9 @@ export type CalculationPeriodType = {
     runningTotalInterestAccrued: number;
     runningTotalPenalty: number;
     totalPaidInterestAtThisPoint: number;
+    payments: PaymentEventType[];
+    isGlobalPenalty: boolean;
+    globalPenaltyRate: number;
 }
 
 export type TotalsType = {
@@ -44,4 +47,17 @@ export type TotalsType = {
     principal: number;
     penalty: number;
     overall: number;
+}
+
+export type PenaltyType = {
+    id: number;
+    start: string;
+    end: string;
+    rate: number;
+}
+
+export type PaymentEventType = {
+    date: Date;
+    type: 'principal' | 'interest';
+    amount: number;
 }
